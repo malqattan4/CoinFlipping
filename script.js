@@ -9,6 +9,7 @@ const fiveHeads = new Promise((resolve, reject) => {
     while (headsCount < 5 && attempts < 101) {
         attempts++;
         let result = tossCoin();
+        console.log(`${result} was flipped`);
         if (result == "heads") {
             headsCount++;
         }
